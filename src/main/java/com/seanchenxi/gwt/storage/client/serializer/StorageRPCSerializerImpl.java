@@ -30,7 +30,7 @@ import java.util.HashMap;
  * Use GWT RPC way to realize object's serialization or deserialization.
  *
  */
-final class StorageRPCSerializerImpl implements StorageSerializer {
+public final class StorageRPCSerializerImpl implements StorageSerializer {
 
   private final static Serializer TYPE_SERIALIZER = GWT.create(StorageTypeSerializer.class);
   private final static HashMap<Class<?>, StorageValueType> TYPE_MAP = new HashMap<Class<?>, StorageValueType>();
