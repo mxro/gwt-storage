@@ -21,6 +21,6 @@ import com.google.gwt.user.client.rpc.impl.Serializer;
 /**
  * Interface for deferred binding generator.
  */
-interface StorageTypeSerializer extends Serializer {
+public interface StorageTypeSerializer extends Serializer {
 
 }

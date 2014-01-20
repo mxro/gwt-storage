@@ -19,7 +19,7 @@ package com.seanchenxi.gwt.storage.client.serializer;
 import com.google.gwt.user.client.rpc.SerializationException;
 import com.google.gwt.user.client.rpc.impl.ClientSerializationStreamReader;
 
-enum StorageValueType {
+public enum StorageValueType {
   BOOLEAN {
     @Override
     Object read(ClientSerializationStreamReader reader) throws SerializationException {

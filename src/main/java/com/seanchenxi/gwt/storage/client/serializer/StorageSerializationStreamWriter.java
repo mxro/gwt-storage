@@ -26,7 +26,7 @@ import com.google.gwt.user.client.rpc.SerializationException;
 import com.google.gwt.user.client.rpc.impl.AbstractSerializationStreamWriter;
 import com.google.gwt.user.client.rpc.impl.Serializer;
 
-final class StorageSerializationStreamWriter extends AbstractSerializationStreamWriter {
+public final class StorageSerializationStreamWriter extends AbstractSerializationStreamWriter {
 
   private static final String APOSTROPHE = "'";
   private static final String BLANK = "";
