@@ -283,7 +283,7 @@ public enum StorageValueType {
     }
   };
 
-  abstract Object read(ClientSerializationStreamReader reader) throws SerializationException;
+  public abstract Object read(ClientSerializationStreamReader reader) throws SerializationException;
 
   abstract void write(StorageSerializationStreamWriter writer, Object instance)
       throws SerializationException;
