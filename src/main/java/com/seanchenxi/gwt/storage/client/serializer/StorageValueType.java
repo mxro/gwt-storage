@@ -22,6 +22,7 @@ import com.google.gwt.user.client.rpc.impl.ClientSerializationStreamReader;
 public enum StorageValueType {
   BOOLEAN {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readBoolean();
     }
@@ -33,6 +34,7 @@ public enum StorageValueType {
   },
   BOOLEAN_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -48,6 +50,7 @@ public enum StorageValueType {
   },
   BYTE {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readByte();
     }
@@ -59,6 +62,7 @@ public enum StorageValueType {
   },
   BYTE_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -74,6 +78,7 @@ public enum StorageValueType {
   },
   CHAR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readChar();
     }
@@ -85,6 +90,7 @@ public enum StorageValueType {
   },
   CHAR_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -100,6 +106,7 @@ public enum StorageValueType {
   },
   DOUBLE {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readDouble();
     }
@@ -111,6 +118,7 @@ public enum StorageValueType {
   },
   DOUBLE_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -126,6 +134,7 @@ public enum StorageValueType {
   },
   FLOAT {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readFloat();
     }
@@ -137,6 +146,7 @@ public enum StorageValueType {
   },
   FLOAT_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -152,6 +162,7 @@ public enum StorageValueType {
   },
   INT {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readInt();
     }
@@ -163,6 +174,7 @@ public enum StorageValueType {
   },
   INT_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -178,6 +190,7 @@ public enum StorageValueType {
   },
   LONG {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readLong();
     }
@@ -189,6 +202,7 @@ public enum StorageValueType {
   },
   LONG_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -204,6 +218,7 @@ public enum StorageValueType {
   },
   OBJECT {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -216,6 +231,7 @@ public enum StorageValueType {
   },
   OBJECT_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -232,6 +248,7 @@ public enum StorageValueType {
   },
   SHORT {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readShort();
     }
@@ -243,6 +260,7 @@ public enum StorageValueType {
   },
   SHORT_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
@@ -258,6 +276,7 @@ public enum StorageValueType {
   },
   STRING {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readString();
     }
@@ -269,6 +288,7 @@ public enum StorageValueType {
   },
   STRING_VECTOR {
     @Override
+	public
     Object read(ClientSerializationStreamReader reader) throws SerializationException {
       return reader.readObject();
     }
